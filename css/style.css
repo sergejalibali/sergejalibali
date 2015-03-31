@@ -55,7 +55,17 @@
 
 /* Type
 ----------------------------- */
-.name {
+.name{
+	position: relative;
+	z-index: 2;
+	font-size: 20px;
+	line-height: 1.5;
+	font-weight: 300;
+	font-style: italic;
+	font-family: "brandon-grotesque";
+	text-transform: uppercase;
+}
+.title {
   position: relative;
   z-index: 2;
   font-size: 34px;
