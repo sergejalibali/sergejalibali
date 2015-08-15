@@ -58,8 +58,8 @@
 #nav{
 	z-index: 9999;
 	position: fixed;
-	top: 25px;
-	right: 12px;
+	top: 19px;
+	right: 11px;
 	list-style-type: none;
 }
 #nav li{
@@ -68,20 +68,116 @@
 }
 #nav li a{
 	background: url(../images/menu-red.png) no-repeat;
-	padding: 15px 20px;
+	padding: 8px 20px;
 	color: #fff;
-	font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+	font-family: "brandon-grotesque", Helvetica, Helvetica Neue, Arial, sans-serif;
 	font-size: 14px;
 	text-decoration: none;
 	text-transform: uppercase;
 	opacity: 0.7;
 }
 #nav li:first-child a{
-	border-radius: 0px 0px 0px 23px;
+	border-radius: 0 0 0 25px;
 }
 #nav li a:hover{
 	text-shadow: 1px 1px 5px #fff;
 	opacity: 1;
+	-webkit-transition: all .1s ease-in-out;
+	-moz-transition: all .1s ease-in-out;
+	-o-transition: all .1s ease-in-out;
+	transition: all .1s ease-in-out;
+}
+
+/* Footer
+----------------------------- */
+#fooleft{
+	z-index:9997;
+	position: fixed;
+	bottom: 12px;
+	left: 12px;
+	background: url(../images/menu-red.png) repeat;
+	padding: 0 30px;
+	color: #fff;
+	font-family: "brandon-grotesque", Helvetica, Helvetica Neue, Arial, sans-serif;
+	font-size: 14px;
+	border-radius: 0 23px 0 0;
+}
+#fooright{
+	z-index:9998;
+	position: fixed;
+	bottom: 12px;
+	right: 12px;
+	background: url(../images/menu-red.png) repeat;
+	padding: 0 30px;
+	border-radius: 23px 0 0 0;
+}
+
+/* Social Links */
+.social-links {
+  padding: 0;
+  list-style-type: none;
+}
+.social-links > li {
+  display: inline-block;
+}
+.social-link-item {
+  display: inline-block;
+  background-image: url(../images/icons-sprite.png);
+  height: 20px;
+  background-size: 123px 20px;
+  text-indent: -9999px;
+  margin-left: 15px;
+  opacity: .7;
+  -webkit-transition: all .1s ease-in;
+  -moz-transition: all .1s ease-in;
+  -o-transition: all .1s ease-in;
+  transition: all .1s ease-in;
+}
+.social-links .email-link-outer {
+  margin-top: 10px;
+  display: block;
+} 
+.email-link {
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+  font-family: "brandon-grotesque";
+  opacity: .5;
+  -webkit-transition: opacity .1s ease-in;
+  -moz-transition: opacity .1s ease-in;
+  -o-transition: opacity .1s ease-in;
+  transition: opacity .1s ease-in;
+}
+.email-link:hover,
+.email-link:focus {
+  opacity: 1;
+} 
+.social-link-item:hover{
+  opacity: 1;
+}
+.social-link-item-twitter {
+  margin-left: 0;
+  width: 21px;
+}
+.social-link-item-linkedin {
+  background-position: -21px 0;
+  width: 19px;
+}
+.social-link-item-github {
+  background-position: -40px 0;
+  width: 18px;
+}
+.social-link-item-dribbble {
+  background-position: -58px 0;
+  width: 21px;
+}
+.social-link-item-behance {
+  background-position: -78px 0;
+  width: 26px;
+}
+.social-link-item-medium {
+  background-position: -105px 0;
+  width: 18px;
 }
 
 /* Type
@@ -126,72 +222,4 @@
   border-color: rgba(255,255,255,.3);
   border-width: 0;
   border-bottom-width: 1px;
-}
-
-/* Social Links
------------------------------ */
-.social-links {
-  position: fixed;
-  width: 475px;
-  left: 50%;
-  bottom: 50px;
-  margin-left: -237px;
-  padding: 0;
-  list-style-type: none;
-}
-.social-links > li {
-  display: inline-block;
-}
-.social-link-item {
-  display: inline-block;
-  background-image: url(../images/icons-sprite.png);
-  height: 20px;
-  background-size: 123px 20px;
-  text-indent: -9999px;
-  margin-left: 15px;
-  opacity: .4;
-  -webkit-transition: all .1s ease-in;
-}
-.social-links .email-link-outer {
-  margin-top: 10px;
-  display: block;
-} 
-.email-link {
-  color: #fff;
-  font-size: 15px;
-  text-decoration: none;
-  font-family: "brandon-grotesque";
-  opacity: .5;
-  -webkit-transition: opacity .1s ease-in;
-}
-.email-link:hover,
-.email-link:focus {
-  opacity: 1;
-} 
-.social-link-item:hover{
-  opacity: 1;
-}
-.social-link-item-twitter {
-  margin-left: 0;
-  width: 21px;
-}
-.social-link-item-linkedin {
-  background-position: -21px 0;
-  width: 19px;
-}
-.social-link-item-github {
-  background-position: -40px 0;
-  width: 18px;
-}
-.social-link-item-dribbble {
-  background-position: -58px 0;
-  width: 21px;
-}
-.social-link-item-behance {
-  background-position: -78px 0;
-  width: 26px;
-}
-.social-link-item-medium {
-  background-position: -105px 0;
-  width: 18px;
 }
